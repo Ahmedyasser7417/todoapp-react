@@ -1,5 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./pattern2.png);
+  background-repeat: repeat;
+}
+
 .App {
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: min(95vw, 500px);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 30px;
 }
 
 .App-logo {
@@ -38,33 +57,50 @@
 }
 
 .todo-app {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+    width: min(95vw, 500px);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
 }
 
 h1 {
   text-align: center;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .todo-form {
   display: flex;
   margin-bottom: 20px;
+  padding: 30px 40px;
+    background-color: #f1f8fb;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 0.8em;
 }
 
 .todo-input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  color: #111111;
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px 0 0 4px;
+  padding: 1em 0.5em;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
   font-size: 16px;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #5a95ff;
 }
 
 .add-button {
   padding: 10px 15px;
-  background-color: #4caf50;
+  background-color: #5a95ff;
   color: white;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -72,9 +108,7 @@ h1 {
   font-size: 16px;
 }
 
-.add-button:hover {
-  background-color: #45a049;
-}
+
 
 .todo-list {
   list-style-type: none;

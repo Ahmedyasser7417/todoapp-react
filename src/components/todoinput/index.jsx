@@ -19,7 +19,6 @@ const TodoInput = ({ addTodo }) => {
                 type="text"
                 value={text}
                 onChange={(myEvent) => {
-                    console.log(myEvent.target.value)
                     setText(myEvent.target.value)
                 }}
                 placeholder="Add a todo..."
